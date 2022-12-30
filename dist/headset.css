@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Yantramanav&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: #151515;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 75px;
+}
+
+#go-to-back {
+  text-decoration: none;
+  height: 50px;
+  align-items: flex-end;
+  display: flex;
+  width: 80%;
+  text-align: start;
+}
+
+.content-header {
+  color: aliceblue;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.links-header {
+  display: flex;
+  gap: 40px;
+}
+
+.links-header a {
+  color: aliceblue;
+  text-decoration: none;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+.container {
+  background-color: aliceblue;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.main-content {
+  width: 80%;
+}
+
+.container01 {
+  justify-content: space-between;
+  height: 500px;
+  margin-top: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.067);
+  display: flex;
+  border-radius: 15px;
+  gap: 80px;
+}
+
+.content-img {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.content-img img {
+  width: 85%;
+  height: 100%;
+}
+
+.text-content-img {
+  width: 45%;
+  height: auto;
+  padding: 15px;
+  background-color: rgba(175, 177, 175, 0.067);
+  gap: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-content-img h3 {
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.buttons-product {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#price {
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.shipping {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 5% 0 5% 0;
+  align-items: flex-start;
+}
+
+.shipping p {
+  font-size: 18px;
+  color: #515050;
+}
+
+#add-to-cart {
+  background-color: rgb(199, 95, 56);
+  color: aliceblue;
+  border: none;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 3px;
+  width: 55%;
+  font-weight: 400;
+}
+
+.button-quantity {
+  display: flex;
+  height: 40px;
+  border-radius: 2px;
+  border: 2px solid rgb(223, 231, 238);
+}
+
+.edit-quantity {
+  background-color: rgb(223, 231, 238);
+  height: 43px;
+  width: 40px;
+  font-size: 20px;
+  border: none;
+}
+
+.imgs-about-product {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  flex-wrap: wrap;
+  gap: 3px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.imgs-about-product img {
+  width: 18%;
+  height: 50%;
+  transition: 0.1s;
+}
+
+.imgs-about-product img:hover {
+  width: 19%;
+  height: 51%;
+  box-shadow: 1px 1px 3px black;
+}
+
+.container02 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.content-container02 {
+  gap: 90px;
+  display: flex;
+}
+
+.content-left {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content-left p {
+  font-size: 18px;
+
+  font-family: sans-serif;
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 30px;
+  height: 100%;
+  width: 20%;
+}
+
+.in-the-box p {
+  font-size: 17px;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+}
+
+.text-orange {
+  color: rgb(199, 95, 56);
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.about-the-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  min-height: 100vh;
+}
+
+.container03 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select {
+  color: #f5f4f4;
+}
+
+.text-product {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 22px;
+  color: #afafaf;
+  margin-top: 20px;
+  width: 90%;
+
+  text-align: start;
+}
+
+.content-product {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0px 200px 0px;
+}
+
+.container03 .left-content {
+  height: 100%;
+  height: 95%;
+}
+
+.container03 .left-content img {
+  width: 98%;
+  height: 900px;
+}
+
+.container03 .left-content {
+  width: 65%;
+}
+
+.container03 .right-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-right-content {
+  width: 43%;
+}
+
+.right-content {
+  align-items: flex-end;
+  width: 30%;
+}
+
+.right-content .top-img img {
+  width: 90%;
+}
+
+.top-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.using-product {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  background-size: contain;
+  background-size: 80%;
+
+  background-image: url(https://www.apple.com/v/airpods-max/e/images/overview/audio_quality_spatial_figure__clxltt2m0z2a_medium.jpg);
+}
+
+.img-about-product {
+  margin-bottom: -250px;
+  width: 100%;
+  text-align: center;
+}
+
+.img-product {
+  width: 60%;
+}
+
+.text-about-product p {
+  font-size: 20px;
+  margin: 0 0 10% 10%;
+  width: 25%;
+}
+
+.text-decoration {
+  color: white;
+  opacity: 1;
+}
+
+.content-about-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  font-family: sans-serif;
+  color: #232323;
+}
+
+.content-about-product .content {
+  width: 80%;
+}
+
+.title-about-product {
+  font-size: 24px;
+}
+
+.text-comprimed {
+  width: 100%;
+  justify-content: end;
+  display: flex;
+  text-align: start;
+}
+
+.text-comprimed h3 {
+  width: 55%;
+  font-size: 26px;
+}
+
+.container02 {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  justify-content: center;
+  width: 100%;
+}
+
+.items {
+  font-family: "Yantramanav", sans-serif;
+  letter-spacing: 3px;
+  color: #232323;
+  display: flex;
+  height: 35%;
+  width: 80%;
+  gap: 10px;
+}
+
+.item {
+  background-color: rgb(219, 228, 235);
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.img-item {
+  height: 210px;
+}
+
+.content-item a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #232323;
+}
+
+.sound-boxs {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.footer {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  background-color: black;
+}
+
+.footer-content {
+  display: flex;
+  width: 80%;
+}
+
+.footer-content-left {
+  width: 50%;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-content-left h1 {
+  margin-top: 15px;
+}
+
+.footer-content-left p {
+  margin-top: 20px;
+}
+
+.footer-content-right {
+  width: 50%;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+  height: 33%;
+  width: 100%;
+  justify-content: end;
+}
+
+.footer-links a {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+
+.social-network {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  gap: 15px;
+}
+
+.social-network i {
+  color: aliceblue;
+  font-size: 30px;
+}
