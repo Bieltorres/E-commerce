@@ -2,7 +2,7 @@ Projeto E-commerce
 
 ![preview](./dist/assets/img/readme.PNG)
 
-[Clique para acessar]()
+[Clique para acessar](https://bieltorres.github.io/E-commerce/)
 
 Tecnologias utilizadas:
 
