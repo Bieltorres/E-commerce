@@ -45,7 +45,7 @@ body {
 }
 
 .content {
-  background-color: #232323;
+  background-color: #070707;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,13 +108,15 @@ body {
 }
 
 .img-initial {
-  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   text-align: end;
   width: 70%;
 }
 
 .img-headset {
-  height: 100%;
+  height: 70%;
   width: 80%;
 }
 
@@ -137,9 +139,10 @@ body {
 }
 
 .item {
-  background-color: rgb(219, 228, 235);
+  background-color: rgb(245, 246, 246);
   display: flex;
   width: 33%;
+  border-bottom: 1px solid #a3a2a2;
   flex-direction: column;
   justify-content: end;
   align-items: center;
@@ -153,8 +156,38 @@ body {
   text-align: center;
 }
 
-.img-item {
-  height: 210px;
+.content-item h1 {
+  margin-top: 1px solid black;
+}
+
+.img-item-headset {
+  height: 150px;
+  transition: 0.2s;
+  margin-bottom: 5%;
+}
+
+.img-item-headset:hover {
+  height: 165px;
+}
+
+.img-item-macbook {
+  height: 130px;
+  transition: 0.2s;
+  margin-bottom: 5%;
+}
+
+.img-item-macbook:hover {
+  height: 145px;
+}
+
+.img-item-airPods-Pro {
+  height: 150px;
+  margin-bottom: 5%;
+  transition: 0.2s;
+}
+
+.img-item-airPods-Pro:hover {
+  height: 165px;
 }
 
 .content-item a {
@@ -164,7 +197,7 @@ body {
 }
 
 .sound-boxs {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -175,18 +208,53 @@ body {
   display: flex;
   height: 550px;
   justify-content: space-evenly;
-  background-color: rgb(199, 95, 56);
+  background-color: black;
 }
 
-.img-sound {
-  width: 50%;
+.img-macbook {
+  width: 60%;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.img-sound img {
-  margin-left: 5%;
-  width: 80%;
+.titles-macbook {
+  margin-top: 6%;
+  width: 100%;
+  text-align: center;
+}
+
+.img-macbook h1 {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 64px;
+  color: aliceblue;
+}
+
+.img-macbook h3 {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 24px;
+  color: aliceblue;
+}
+
+.img-macbook h3 img {
+  width: 35px;
+  margin-left: 1%;
+  height: 35px;
+}
+
+.titles-macbook .sub-title {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  color: #a3a2a2;
+}
+
+.img-macbook img {
+  width: 100%;
 }
 
 .text-content03 {
@@ -198,16 +266,38 @@ body {
   color: aliceblue;
 }
 
-.text-content03 h1 {
+.text-content03 .title-about-macbook {
   font-family: "Yantramanav", sans-serif;
-  font-size: 64px;
-  font-family: sans-serif;
+  font-size: 44px;
+  color: aliceblue;
+}
+
+#text-planet {
+  border-bottom: 1px solid rgba(0, 128, 0, 0.809);
+  margin-right: 10px;
+}
+
+.title-about-macbook h1 {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 44px;
+  color: aliceblue;
 }
 
 .text-content03 p {
   font-family: "Assistant", sans-serif;
   font-size: 20px;
   font-weight: 500;
+}
+
+#button-macbook {
+  border: 1px solid aliceblue;
+  transition: 0.1s;
+}
+
+#button-macbook:hover {
+  background-color: aliceblue;
+  color: #070707;
+  border: 2px solid #070707;
 }
 
 .text-content03 a {
@@ -232,6 +322,29 @@ body {
   display: flex;
   height: 300px;
   background-color: rgb(219, 228, 235);
+  background-size: 100%;
+  background-image: url(./assets/img/hero_logo.png);
+  background-repeat: no-repeat;
+}
+
+#button-container04 {
+  border: 2px solid #070707;
+  background: transparent;
+  margin-top: 25px;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  width: 50%;
+  height: 55px;
+  transition: 0.2s;
+}
+
+#button-container04:hover {
+  background-color: #070707;
+  color: aliceblue;
+  padding: 3px;
 }
 
 .text-container04 {
@@ -247,21 +360,14 @@ body {
   font-family: "Yantramanav", sans-serif;
 }
 
-.text-container04 a {
-  border: 2px solid #070707;
-  background: transparent;
-  margin-top: 25px;
-  display: flex;
-  font-size: 16px;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  width: 50%;
-  height: 55px;
-}
-
-.img-sound-04 img {
+.container04 .text-about-macbook {
+  font-size: 28px;
+  font-family: "Yantramanav", sans-serif;
+  width: 40%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .container05 {
