@@ -8,6 +8,7 @@
 
 a {
   cursor: pointer;
+  border-radius: 5px;
 }
 
 body {
@@ -86,7 +87,8 @@ body {
 }
 
 .button-container01 {
-  background-color: rgb(199, 95, 56);
+  border: 1px solid aliceblue;
+  transition: 0.1s;
   margin-top: 35px;
   color: aliceblue;
   display: flex;
@@ -96,9 +98,14 @@ body {
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 2px;
-  border: none;
   width: 150px;
   height: 50px;
+}
+
+.button-container01:hover {
+  background-color: aliceblue;
+  color: #070707;
+  border: 2px solid #070707;
 }
 
 .main-content {
@@ -113,11 +120,6 @@ body {
   align-items: center;
   text-align: end;
   width: 70%;
-}
-
-.img-headset {
-  height: 70%;
-  width: 80%;
 }
 
 .container02 {
@@ -376,14 +378,71 @@ body {
 }
 
 .left-content {
+  background-color: rgb(245, 246, 246);
   width: 50%;
   border-radius: 10px;
   height: 300px;
+  background-image: url(./assets/img/airPods-pro.png);
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: left;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.2s;
 }
 
-.left-content img {
-  width: 100%;
-  height: 99.4%;
+.left-content:hover {
+  background-size: 47%;
+}
+
+.text-about-airpods-pro {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-airPods-3-geracao {
+  font-size: 52px;
+  font-family: "Yantramanav", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 1%;
+}
+
+.subtitle-airPods-3-geracao {
+  margin: -2% 0 2% 0;
+}
+
+.price-airPods-3-geracao {
+  font-size: 22px;
+  font-family: "Yantramanav", sans-serif;
+}
+
+.button-airPods-pro {
+  border: 2px solid #070707;
+  background: transparent;
+  margin-top: 25px;
+  display: flex;
+  font-size: 18px;
+  font-family: "Yantramanav", sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  width: 50%;
+  height: 45px;
+  text-decoration: none;
+  color: #070707;
+  transition: 0.2s;
+}
+
+.button-airPods-pro:hover {
+  color: aliceblue;
+  font-size: 16px;
+  border: 2px solid aliceblue;
+  background-color: #070707;
+  padding: 2px;
 }
 
 .rigth-content {
@@ -396,25 +455,40 @@ body {
   text-align: start;
   font-family: "Yantramanav", sans-serif;
   justify-content: center;
-  background-color: rgb(219, 228, 235);
-}
-
-.rigth-content h1 {
-  font-size: 32px;
-  font-family: sans-serif;
-}
-
-.rigth-content a {
-  border: 2px solid #070707;
-  background: transparent;
-  margin-top: 25px;
+  background-color: black;
+  background-image: url(./assets/img/airPods-pro-config.png);
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: left;
   display: flex;
-  font-size: 16px;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  width: 65%;
-  height: 55px;
+  align-items: flex-start;
+  transition: 0.2s;
+}
+
+.rigth-content:hover {
+  background-size: 54%;
+}
+
+.text-right-content {
+  display: flex;
+  justify-content: end;
+}
+
+.text-right-content p {
+  color: #a3a2a2;
+  margin-right: 3%;
+  width: 50%;
+  font-size: 20px;
+  font-weight: 100;
+  transition: 0.1s;
+}
+
+.text-airpods-pro-white {
+  color: aliceblue;
+}
+
+.text-airpods-pro-green {
+  color: rgb(0, 227, 0);
 }
 
 .container06 {
@@ -459,7 +533,7 @@ body {
   justify-content: center;
   height: 300px;
   margin-top: 10%;
-  background-color: #232323;
+  background-color: black;
 }
 
 .footer-content {
