@@ -544,12 +544,6 @@ body {
   transition: background 0s;
 }
 
-/* #button-container04:hover {
-  background-color: #070707;
-  color: aliceblue;
-  padding: 3px;
-} */
-
 .text-container04 {
   font-family: sans-serif;
   flex-direction: column;
@@ -576,26 +570,17 @@ body {
 .container05 {
   display: flex;
   gap: 15px;
+  height: 300px;
 }
 
 .left-content {
   background-color: rgb(245, 246, 246);
   width: 50%;
+  height: 100%;
   border-radius: 10px;
-  height: 300px;
-  background-image: url(./assets/img/airPods-pro.png);
-  background-repeat: no-repeat;
-  background-size: 45%;
-  background-position: left;
   display: flex;
-  align-items: flex-end;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  transition: 0.2s;
-}
-
-.left-content:hover {
-  background-size: 47%;
 }
 
 .text-about-airpods-pro {
@@ -677,7 +662,7 @@ body {
 .rigth-content {
   width: 50%;
   border-radius: 10px;
-  height: 300px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
