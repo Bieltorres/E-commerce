@@ -7,6 +7,100 @@
 }
 
 a {
+  text-decoration: none;
+}
+
+.link-items-products {
+  font-weight: bold;
+  color: white;
+  border-radius: 2rem;
+  width: 100px;
+  height: 28px;
+  border: none;
+  background-color: #070707;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-items-products .span-mother {
+  display: flex;
+  overflow: hidden;
+}
+
+.link-items-products:hover .span-mother {
+  position: absolute;
+}
+
+.link-items-products:hover .span-mother span {
+  transform: translateY(1.2em);
+}
+
+.link-items-products .span-mother span:nth-child(1) {
+  transition: 0.2s;
+}
+
+.link-items-products .span-mother span:nth-child(2) {
+  transition: 0.3s;
+}
+
+.link-items-products .span-mother span:nth-child(3) {
+  transition: 0.4s;
+}
+
+.link-items-products .span-mother span:nth-child(4) {
+  transition: 0.5s;
+}
+
+.link-items-products .span-mother span:nth-child(5) {
+  transition: 0.6s;
+}
+
+.link-items-products .span-mother span:nth-child(6) {
+  transition: 0.7s;
+}
+
+.link-items-products .span-mother2 {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+.link-items-products .span-mother2 span {
+  transform: translateY(-1.2em);
+}
+
+.link-items-products:hover .span-mother2 span {
+  transform: translateY(0);
+}
+
+.link-items-products .span-mother2 span {
+  transition: 0.2s;
+}
+
+.link-items-products .span-mother2 span:nth-child(2) {
+  transition: 0.3s;
+}
+
+.link-items-products .span-mother2 span:nth-child(3) {
+  transition: 0.4s;
+}
+
+.link-items-products .span-mother2 span:nth-child(4) {
+  transition: 0.5s;
+}
+
+.link-items-products .span-mother2 span:nth-child(5) {
+  transition: 0.6s;
+}
+
+.link-items-products .span-mother2 span:nth-child(6) {
+  transition: 0.7s;
+}
+
+/* ---------- */
+
+a {
   cursor: pointer;
   border-radius: 5px;
 }
@@ -87,25 +181,57 @@ body {
 }
 
 .button-container01 {
-  border: 1px solid aliceblue;
-  transition: 0.1s;
+  letter-spacing: 2px;
+  text-decoration: none;
   margin-top: 35px;
-  color: aliceblue;
+  text-align: center;
+  --color: aliceblue;
+  font-family: "Yantramanav", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  letter-spacing: 2px;
-  width: 150px;
+  width: 40%;
   height: 50px;
+  line-height: 2.5em;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid aliceblue;
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--color);
+}
+
+.button-container01:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
 }
 
 .button-container01:hover {
-  background-color: aliceblue;
   color: #070707;
-  border: 2px solid #070707;
+}
+
+.button-container01:before {
+  bottom: 100%;
+  right: 100%;
+  transition: all 0.7s;
+}
+
+.button-container01:hover:before {
+  bottom: -30px;
+  right: -30px;
+}
+
+.button-container01:active:before {
+  background: black;
+  transition: background 0s;
 }
 
 .main-content {
@@ -155,7 +281,8 @@ body {
   flex-direction: column;
   gap: 20px;
   margin-bottom: 30px;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .content-item h1 {
@@ -208,7 +335,7 @@ body {
 .container03 {
   border-radius: 10px;
   display: flex;
-  height: 550px;
+  height: 560px;
   justify-content: space-evenly;
   background-color: black;
 }
@@ -292,14 +419,48 @@ body {
 }
 
 #button-macbook {
+  text-align: center;
+  font-family: "Yantramanav", sans-serif;
+  width: 50%;
+  height: 50px;
+  line-height: 2.5em;
+  position: relative;
+  overflow: hidden;
   border: 1px solid aliceblue;
-  transition: 0.1s;
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#button-macbook:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: aliceblue;
+  height: 150px;
+  width: 300px;
+  border-radius: 50%;
 }
 
 #button-macbook:hover {
-  background-color: aliceblue;
-  color: #070707;
-  border: 2px solid #070707;
+  color: black;
+}
+
+#button-macbook:before {
+  bottom: 100%;
+  right: 100%;
+  transition: all 0.4s;
+}
+
+#button-macbook:hover:before {
+  bottom: -30px;
+  right: -30px;
+}
+
+#button-macbook:active:before {
+  background: black;
+  transition: background 0s;
 }
 
 .text-content03 a {
@@ -330,24 +491,60 @@ body {
 }
 
 #button-container04 {
-  border: 2px solid #070707;
-  background: transparent;
-  margin-top: 25px;
-  display: flex;
-  font-size: 16px;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  width: 50%;
-  height: 55px;
-  transition: 0.2s;
+  text-align: center;
+  --color: black;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+#button-container04:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
 }
 
 #button-container04:hover {
+  color: #fff;
+}
+
+#button-container04:before {
+  bottom: 100%;
+  right: 100%;
+  transition: all 0.4s;
+}
+
+#button-container04:hover:before {
+  bottom: -30px;
+  right: -30px;
+}
+
+#button-container04:active:before {
+  background: black;
+  transition: background 0s;
+}
+
+/* #button-container04:hover {
   background-color: #070707;
   color: aliceblue;
   padding: 3px;
-}
+} */
 
 .text-container04 {
   font-family: sans-serif;
@@ -421,28 +618,56 @@ body {
 }
 
 .button-airPods-pro {
-  border: 2px solid #070707;
-  background: transparent;
+  text-decoration: none;
   margin-top: 25px;
-  display: flex;
-  font-size: 18px;
+  text-align: center;
+  --color: black;
   font-family: "Yantramanav", sans-serif;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
   width: 50%;
-  height: 45px;
-  text-decoration: none;
-  color: #070707;
-  transition: 0.2s;
+  height: 50px;
+  line-height: 2.5em;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid black;
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--color);
+}
+
+.button-airPods-pro:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
 }
 
 .button-airPods-pro:hover {
-  color: aliceblue;
-  font-size: 16px;
-  border: 2px solid aliceblue;
-  background-color: #070707;
-  padding: 2px;
+  color: #fff;
+}
+
+.button-airPods-pro:before {
+  bottom: 100%;
+  right: 100%;
+  transition: all 0.4s;
+}
+
+.button-airPods-pro:hover:before {
+  bottom: -30px;
+  right: -30px;
+}
+
+.button-airPods-pro:active:before {
+  background: black;
+  transition: background 0s;
 }
 
 .rigth-content {
@@ -492,12 +717,71 @@ body {
 }
 
 .container06 {
+  border-radius: 10px;
+  height: 800px;
+  background-color: rgb(0, 0, 0);
+  background-image: url(https://www.apple.com/v/airpods-max/e/images/overview/audio_quality_spatial_figure__clxltt2m0z2a_medium.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: 90%;
+  background-size: 60%;
+  display: flex;
+  width: 100%;
+}
+
+.about-airPodsMax-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.about-airPodsMax-right {
+  width: 50%;
+}
+
+.img-wave-sound {
+  opacity: 0;
+  width: 75%;
+  transition: 0.1s;
+}
+
+.img-wave-sound:hover {
+  opacity: 1;
+  width: 77%;
+}
+
+.text-about-airPodsMax {
+  font-size: 26px;
+  width: 75%;
+  color: #a3a2a2;
+}
+
+.about-airPodsMax-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.about-airPodsMax-right section {
+  margin-bottom: 25%;
+}
+
+.text-about-airPodsMax-white {
+  color: white;
+}
+
+.container07 {
   margin-top: 8%;
   height: 550px;
   display: flex;
 }
 
-.text-content-container06 {
+.text-content-container07 {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -505,23 +789,23 @@ body {
   gap: 30px;
 }
 
-.text-content-container06 h1 {
+.text-content-container07 h1 {
   font-family: "Yantramanav", sans-serif;
   font-size: 40px;
   letter-spacing: 3px;
 }
 
-.text-content-container06 p {
+.text-content-container07 p {
   font-size: 18px;
   width: 95%;
   font-weight: 400;
 }
 
-.img-content-container06 {
+.img-content-container07 {
   width: 50%;
 }
 
-.img-content-container06 img {
+.img-content-container07 img {
   width: 100%;
   height: 100%;
   border-radius: 10px;

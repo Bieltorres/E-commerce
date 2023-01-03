@@ -24,15 +24,6 @@ body {
   height: 75px;
 }
 
-#go-to-back {
-  text-decoration: none;
-  height: 50px;
-  align-items: flex-end;
-  display: flex;
-  width: 80%;
-  text-align: start;
-}
-
 .content-header {
   color: aliceblue;
   width: 80%;
