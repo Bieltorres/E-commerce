@@ -221,7 +221,7 @@ body {
 .button-container01:before {
   bottom: 100%;
   right: 100%;
-  transition: all 0.7s;
+  transition: all 0.4s;
 }
 
 .button-container01:hover:before {
