@@ -555,12 +555,18 @@ body {
 .container04 {
   justify-content: space-between;
   border-radius: 10px;
+  position: relative;
   display: flex;
   height: 300px;
   background-color: rgb(219, 228, 235);
   background-size: 100%;
-  background-image: url(/assets/img/hero_logo.png);
   background-repeat: no-repeat;
+}
+
+.container04 img {
+  position: absolute;
+  width: 100%;
+  height: inherit;
 }
 
 #button-container04 {
@@ -614,6 +620,7 @@ body {
 }
 
 .text-container04 {
+  z-index: 1;
   font-family: sans-serif;
   flex-direction: column;
   align-items: center;
@@ -650,6 +657,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.left-content img {
+  width: 40%;
+  margin-right: 8%;
 }
 
 .text-about-airpods-pro {
@@ -730,6 +742,7 @@ body {
 
 .rigth-content {
   width: 50%;
+  position: relative;
   border-radius: 10px;
   height: 100%;
   display: flex;
@@ -739,7 +752,6 @@ body {
   font-family: "Yantramanav", sans-serif;
   justify-content: center;
   background-color: black;
-  background-image: url(/assets/img/airPods-pro-config.png);
   background-repeat: no-repeat;
   background-size: 55%;
   background-position: left;
@@ -748,8 +760,10 @@ body {
   transition: 0.2s;
 }
 
-.rigth-content:hover {
-  background-size: 54%;
+.rigth-content img {
+  position: absolute;
+  width: 30%;
+  left: 5%;
 }
 
 .text-right-content {
@@ -862,17 +876,15 @@ body {
 }
 
 .img-content-container07 {
-  border-right: 1px solid #e1e1e1;
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
   border-top-left-radius: 10px;
-  background-image: url("/assets/img/airpodsMax-pink.png");
+  background-size: contain;
+  background-image: url(https://www.apple.com/v/airpods-max/e/images/overview/design_mesh__cleb6oo85bo2_large.jpg);
   background-repeat: no-repeat;
+  background-size: 100%;
   background-position: center;
   border-bottom-left-radius: 10px;
   width: 50%;
   text-align: center;
-  background-color: #070707;
 }
 
 .footer {
