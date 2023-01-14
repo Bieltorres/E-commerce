@@ -7,80 +7,120 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="./assets/fontawesome-free-6.2.1-web/css/all.min.css"
+      href="./fontawesome-free-6.2.1-web/css/all.min.css"
     />
-    <link rel="stylesheet" href="./headset.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+     <link
+      rel="shortcut icon"
+      href="https://www.apple.com/v/macbook-air-m2/b/images/overview/routers/icon_environment__ebudieaixqqa_large.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style/airpodsMax.css"/>
+    <script src="./Js/entities/AirpodsMax.js" defer type="module"></script>
+    <script src="./Js/Index.js" defer></script>
     <title>AirPod Max</title>
   </head>
   <body>
     <div class="header">
-      <div class="content-header">
-        <h1>audiophile</h1>
-        <div class="links-header">
-          <a href="./index.html">Home</a>
-          <a href="">HeadPhones</a>
-          <a href="">Speakers</a>
-          <a href="">Hearphones</a>
-        </div>
+      <section class="content-header">
+        <h1>ApplePhile</h1>
+        <section class="links">
+          <a class="link-header" href="/index.html">Início</a>
+          <a class="link-header" href="">Airpods Pro</a>
+          <a class="link-header" href="./macbook.html">Mackbook</a>
+        </section>
         <a href=""
           ><i
             class="fa-solid fa-cart-shopping"
             style="font-size: 22px; color: aliceblue"
           ></i
         ></a>
-      </div>
+      </section>
     </div>
 
     <div class="container">
-      <a href="./index.html" id="go-to-back">< Voltar ao início</a>
       <div class="main-content">
+        
+        <!--  -->
+
+
         <div class="container01">
           <div class="content-img">
-            <img
-            src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-green-202011?wid=470&hei=556&fmt=png-alpha&.v=1604022364000"
-              alt=""
-            />
+            <div class="swiper">
+
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img style="width: 430px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-spacegray-202011?wid=470&hei=556&fmt=png-alpha&.v=1604709508000" alt="Foto 02">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img style="width: 400px;" src="./img/airpodsMaxPreview.png" alt="Foto 02">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img style="width: 430px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MJ0A3_ACC_FV1?wid=324&hei=240&align=0%2C1&fmt=png-alpha&.v=1611093537000" alt="Foto 02">
+            </div>
+          </div>
+ 
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img style="width: 350px;" src="./img/airpodsmax-smartcase.png" alt="Foto 03">
+            </div>
+          </div>
+
+           
+          
+         
+        </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
           </div>
           <div class="text-content-img">
-            <h3 >- APPLE</h3>
-            <h1 style="font-size: 46px; font-family: 'Yantramanav', sans-serif">
-              AirPods Max <i class="fa-brands fa-apple"></i> <br> 
-            </h1>
+            <h3 >- APPLE <i class="fa-brands fa-apple"></i></h3>
+            <span id="content-title-product"></span>
             
             <div class="price">
-            <p
-              id="price">
-            R$ 6.590,00
-            </p>
-            <p style="font-family: sans-serif; color: #4a4a4a; border-bottom: 1px solid #858585; padding-bottom: 20px;">R$ 5.931,00 à vista (10% de desconto)</p>
+            <p id="price"></p>
+            <p style="font-family: sans-serif; color: blue; margin-top: 1%;">Em até 12x de R$549,17</p>
+            <p style="font-family: sans-serif; margin-top: -3%; padding-bottom: 5%; border-bottom: 1px solid #858585; color: #4a4a4a; ">R$ 5.931,00 à vista (10% de desconto)</p>
+           
             <div class="shipping">
               <p style="font-size: 18px; color: black;"><i class="fa-solid fa-truck"></i>  Entrega:</p>
-              <p>Em estoque</p>
+              <p id="inStock"></p>
               <p>Frete grátis</p>
             </div>
             <div class="buttons-product">
               <div class="button-quantity">
-                <button class="edit-quantity">-</button>
-                <input
-                  type="number"
-                  name="quantity"
-                  id="quantity"
-                  style="
-                    width: 40px;
-                    height: 44px;
-                    padding-left: 8px;
-                    border: none;
-                    text-align: center;
-                    background-color: rgb(223, 231, 238);
-                  "
-                />
-                <button class="edit-quantity">+</button>
+                <button id="subtract" class="edit-quantity">-</button>
+                <input type="number" id="quantity" value="1" readonly disabled></input>
+                <button id="sum" class="edit-quantity">+</button>
               </div>
               <button id="add-to-cart">Adicionar no Carrinho</button>
             </div>
             </div>
           </div>
         </div>
+
+
+        <!--  -->
+
+
+
+
+
         <section class="imgs-about-product">
           <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpod-max-202011-gallery-1?wid=4056&hei=2400&fmt=jpeg&qlt=90&.v=1605206435000" alt="">
           <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpod-max-202011-gallery-2?wid=2824&hei=2400&fmt=jpeg&qlt=90&.v=1603853566000" alt="">
@@ -212,51 +252,7 @@
 
       <!--  -->
 
-      <div class="container02">
-        <section class="items">
-          <div class="item ">
-            <img
-              src="./assets/img/Design sem nome.png"
-              alt="headset"
-              class="img-item"
-            />
-            <div class="content-item">
-              <h1 class="title-item">AirPods Max</h1>
-              <a href="">
-                Shop <strong style="color: #e03719; width: 18px">></strong>
-              </a href="">
-            </div>
-          </div>
-
-          <div class="item">
-            <img
-              src="./assets/img/sound-box.png"
-              alt="headset"
-              class="img-item"
-            />
-            <div class="content-item">
-              <h1 class="title-item">SPEAKERS</h1>
-              <a href="">
-                Shop <strong style="color: #e03719; width: 18px">></strong>
-              </a>
-            </div>
-          </div>
-
-          <div class="item">
-            <img
-              src="./assets/img/Earphone.png"
-              alt="headset"
-              class="img-item"
-            />
-            <div class="content-item">
-              <h1 class="title-item">EARPHONES</h1>
-              <a href="">
-                Shop <strong style="color: #e03719; width: 18px">></strong>
-              </a>
-            </div>
-          </div>
-        </section>
-      </div>
+  
       <footer class="footer">
         <div class="footer-content">
           <div class="footer-content-left">
@@ -285,5 +281,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
   </body>
 </html>

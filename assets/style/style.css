@@ -12,6 +12,7 @@ a {
 
 .link-items-products {
   font-weight: bold;
+  cursor: pointer;
   color: white;
   border-radius: 2rem;
   width: 100px;
@@ -98,6 +99,45 @@ a {
   transition: 0.7s;
 }
 
+.links a {
+  font-size: 16px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.links a:focus,
+.links a:hover {
+  color: #fff;
+}
+
+.links a:focus:after,
+.links a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.links a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  position: absolute;
+  width: 0%;
+  right: 0;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 350ms;
+  transition-property: width, left;
+}
+
 /* ---------- */
 
 a {
@@ -118,12 +158,23 @@ body {
 
 .header {
   height: 65px;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1px solid aliceblue;
+  position: fixed;
+  opacity: 0.9;
+  background-color: #070707;
+}
+
+.content-header {
   color: aliceblue;
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.1px solid aliceblue;
 }
 
 .links {
@@ -137,6 +188,12 @@ body {
   color: aliceblue;
   text-decoration: none;
   font-weight: 600;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  opacity: 1;
 }
 
 .content {
@@ -350,6 +407,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(https://www.apple.com/v/macbook-air-m2/b/images/overview/routers/macbook_air__xfwljox1r2qm_large.jpg);
 }
 
 .titles-macbook {
@@ -490,7 +550,7 @@ body {
   height: 300px;
   background-color: rgb(219, 228, 235);
   background-size: 100%;
-  background-image: url(./assets/img/hero_logo.png);
+  background-image: url(/assets/img/hero_logo.png);
   background-repeat: no-repeat;
 }
 
@@ -670,7 +730,7 @@ body {
   font-family: "Yantramanav", sans-serif;
   justify-content: center;
   background-color: black;
-  background-image: url(./assets/img/airPods-pro-config.png);
+  background-image: url(/assets/img/airPods-pro-config.png);
   background-repeat: no-repeat;
   background-size: 55%;
   background-position: left;
@@ -842,8 +902,8 @@ body {
 .footer-links {
   display: flex;
   gap: 25px;
-  height: 33%;
   width: 100%;
+  margin-bottom: 15%;
   justify-content: end;
 }
 
@@ -853,6 +913,45 @@ body {
   text-decoration: none;
   color: aliceblue;
   font-family: sans-serif;
+}
+
+.footer-links a {
+  font-size: 16px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-links a:focus:after,
+.footer-links a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.footer-links a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  position: absolute;
+  width: 0%;
+  right: 0;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 350ms;
+  transition-property: width, left;
 }
 
 .social-network {
