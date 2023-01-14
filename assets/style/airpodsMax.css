@@ -550,6 +550,7 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   justify-content: center;
   height: 300px;
+  margin-top: 10%;
   background-color: black;
 }
 
@@ -586,8 +587,8 @@ input[type="number"]::-webkit-outer-spin-button {
 .footer-links {
   display: flex;
   gap: 25px;
-  height: 33%;
   width: 100%;
+  margin-bottom: 15%;
   justify-content: end;
 }
 
@@ -597,6 +598,45 @@ input[type="number"]::-webkit-outer-spin-button {
   text-decoration: none;
   color: aliceblue;
   font-family: sans-serif;
+}
+
+.footer-links a {
+  font-size: 16px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-links a:focus:after,
+.footer-links a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.footer-links a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  position: absolute;
+  width: 0%;
+  right: 0;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 350ms;
+  transition-property: width, left;
 }
 
 .social-network {

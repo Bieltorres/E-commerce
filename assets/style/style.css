@@ -197,13 +197,14 @@ body {
 }
 
 .content {
-  background-color: #070707;
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .container01 {
+  margin-top: 5%;
   height: 500px;
   color: aliceblue;
   display: flex;
@@ -303,9 +304,14 @@ body {
 
 .img-initial {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   text-align: end;
+  width: 70%;
+  height: 100%;
+}
+
+.img-initial img {
   width: 70%;
 }
 
@@ -331,7 +337,10 @@ body {
   background-color: rgb(245, 246, 246);
   display: flex;
   width: 33%;
-  border-bottom: 1px solid #a3a2a2;
+  border-bottom: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  border-radius: 10px;
   flex-direction: column;
   justify-content: end;
   align-items: center;
@@ -825,8 +834,8 @@ body {
 }
 
 .container07 {
-  margin-top: 8%;
-  height: 550px;
+  margin-top: 10%;
+  height: 630px;
   display: flex;
 }
 
@@ -836,28 +845,34 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .text-content-container07 h1 {
+  margin-left: 15%;
   font-family: "Yantramanav", sans-serif;
   font-size: 40px;
   letter-spacing: 3px;
-}
-
-.text-content-container07 p {
-  font-size: 18px;
-  width: 95%;
-  font-weight: 400;
+  width: 80%;
 }
 
 .img-content-container07 {
+  border-right: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  border-top-left-radius: 10px;
+  background-image: url("/assets/img/airpodsMax-pink.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 10px;
   width: 50%;
-}
-
-.img-content-container07 img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  text-align: center;
+  background-color: #070707;
 }
 
 .footer {
