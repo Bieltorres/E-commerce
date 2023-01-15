@@ -45,3 +45,9 @@ price.innerText = `R$ ${priceProduct}`;
 const inStock = (document.getElementById(
   "inStock"
 ).innerText = `${AirPodsMax.stock} unidades em estoque`);
+
+fetch("https://ipapi.co/json")
+  .then((response) => response.json())
+  .then((data) => {
+    document.getElementById("region").innerHTML = data.city;
+  });

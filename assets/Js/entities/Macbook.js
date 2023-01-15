@@ -45,3 +45,9 @@ const inStock = (document.getElementById(
 ).innerText = `${Macbook.stock} unidades em estoque`);
 
 alert("Página em desenvolvimento");
+
+fetch("https://ipapi.co/json")
+  .then((response) => response.json())
+  .then((data) => {
+    document.getElementById("region").innerHTML = data.city;
+  });
