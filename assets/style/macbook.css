@@ -119,9 +119,7 @@ body {
   height: 500px;
   position: relative;
   margin-top: 110px;
-  border-left: 1px solid rgba(0, 0, 0, 0.067);
-  border-top: 1px solid rgba(0, 0, 0, 0.067);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.067);
+
   display: flex;
   border-radius: 20px;
   gap: 80px;

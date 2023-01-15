@@ -44,4 +44,4 @@ const inStock = (document.getElementById(
   "inStock"
 ).innerText = `${Macbook.stock} unidades em estoque`);
 
-alert("Página ainda em desenvolvimento");
+alert("Página em desenvolvimento");
