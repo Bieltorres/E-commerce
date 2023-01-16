@@ -669,6 +669,7 @@ body {
   position: absolute;
   width: 40%;
   transition: 0.2s;
+  left: 5%;
 }
 
 .left-content img:hover {
